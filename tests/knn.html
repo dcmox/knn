@@ -1,0 +1,45 @@
+<html>
+	<head>
+        <title>KNearest Neighbor Demo</title>
+        <style>
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0 auto;}
+            button { padding: 4px 8px; }
+            #content { max-width: 1000px; padding: 40px 20px; margin: 0 auto; min-height: 100%; background-color: #fafafa; }
+            label { padding-right: 10px; }
+            hr { height: 0; color: #000; border: 1px solid #ddd; width: 100%; }
+            #map{
+                position:relative; 
+                border: 1px solid #aaa; 
+                width: 350px; 
+                font-size: 10px;
+                height: 300px;
+            }
+            .point{text-indent: 10px;}
+            .point,.testPoint{position: absolute; border-radius: 10px; width: 10px; 
+            height: 10px; background-color: green; display: block;}
+            .testPoint{background-color:red;}
+            .nearest{background-color:blue;}
+            </style>
+	</head>
+	<body>
+        <div id="content">
+            <h1>kNN Demonstration</h1>
+            <p>
+                k-Nearest Neighbor (kNN) is a machine learning and classification algorithm used to group similar points together and make a judgement based on the data 
+                available. This is a fun little demonstration to give you an idea of the capabilities of the k-Nearest Neighbor algorithm.
+            </p>
+            <p>
+                In this example, we chose k=3 to find the 3 nearest neighbors to our point. With the sample dataset, we can classify based on a person's location 
+                (the red dot) that a person may be "Drunk" or "Sober" depending on the proximity of bars/clubs or schools/parks in the area.
+            </p>
+            <div id="map"></div>
+            Classification: <span id="classification">???</span>
+            <p>
+                Find more cool projects on my <a href="https://github.com/dcmox">GitHub</a> or contact me via email at dancmox@comcast.net if you have questions.
+            </p>
+        </div>
+    </body>
+    <script>var exports = {};</script>
+    <script src="./usage-browser.js"></script>
+    <!-- This demo was created by Daniel Moxon @ github.com/dcmox -->
+</html>
